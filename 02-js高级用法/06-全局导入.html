@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./05-全局导出.js"></script>
+    <!-- 全局引入js -->
+    <!-- 变量直接暴露全局 -->
+    <!-- 直接用 -->
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+
+    <script>
+        document.getElementById('d1').innerHTML = aa
+        document.getElementById('d2').innerHTML = sum(11,22)
+    </script>
+</body>
+</html>

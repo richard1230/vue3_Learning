@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <div>题目: 1+1=? </div>
+        <button @click="run">{{msg}}答案</button>
+        <div>{{ans}}</div>
+        <div>现在是 {{m}}月</div>
+        <div>{{ansMsg}}</div>
+        <myend></myend>
+    </div>
+    <script type="module">
+        import { createApp, ref, computed, watch } from 'https://unpkg.com/vue@3.5.13/dist/vue.esm-browser.js'
+        import myend from './end.js'
+        const app = createApp({
+            setup() {
+                const ans = ref();
+                let flag = false;
+                const msg = ref('显示');
+                const ansMsg = ref();
+
+                function run() {
+                    flag = !flag;
+                    ans.value = (flag) ? 2 : ''
+                    msg.value = (flag) ? '隐藏' : '显示'
+                }
+
+                const m = computed(() => {
+                    return new Date().getMonth() + 1
+                })
+
+                watch(ans, (x, y) => {
+                    ansMsg.value = (flag) ? '有答案' : '无答案'
+                })
+
+                return {
+                    ans, run, msg, m,ansMsg
+                }
+            },
+            components: {
+                myend
+            }
+        })
+        app.mount('#app')
+
+
+
+
+    </script>
+</body>
+
+</html>

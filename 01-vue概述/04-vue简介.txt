@@ -1,0 +1,22 @@
+vue 发展史
+- 2014 vue 1.0 
+- 2016 vue 2.0
+- 2020 vue 3.0
+
+vue 官网
+- https://cn.vuejs.org/
+- 开源免费
+
+vue3版本
+- global
+   https://unpkg.com/vue@3.5.13/dist/vue.global.js
+   整个js文件，就是一个Vue函数
+   使用方式 Vue.变量  Vue.函数名()
+
+- browser
+   https://unpkg.com/vue@3.5.13/dist/vue.esm-browser.js
+   文件中，大量零散的函数
+   使用方式 直接用
+
+- 等等
+

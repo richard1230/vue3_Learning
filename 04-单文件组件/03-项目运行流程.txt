@@ -1,0 +1,8 @@
+项目的运行流程
+- 从 index.html 开始
+- 然后，导入 src/main.js 文件
+- 在 main.js 中， 使用了 vue.js
+- 从中，引入了 createApp 函数
+- 创建createApp() 应用
+- 函数参数是： src/App.vue
+- 最后，挂载到了 index.html 中的 '#app' 中

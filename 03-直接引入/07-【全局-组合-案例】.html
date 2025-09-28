@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3.5.13/dist/vue.global.js"></script>
+    <script src="./start.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        <start></start>
+        <div>{{ num }}</div>
+        <button @click="add">+1</button>
+        <button @click="sub">-1</button>
+        <div>{{ date}}</div>
+        <div>是否是3的倍数, {{ bl }}</div>
+    </div>
+
+    <script>
+        const { createApp ,ref,computed,  watch} = Vue
+        const app = createApp({
+            setup(){
+                const num = ref(10);
+                const bl = ref('否');
+
+                function add(){
+                    num.value++
+                }
+                function sub(){
+                    num.value--
+                }
+
+                const date = computed(()=>{
+                    return new Date()
+                })
+                watch( num , (x,y)=>{
+                    bl.value = (x%3==0)?'是':'否'
+                }   )
+
+                return {
+                    num,add,sub,date,bl
+                }
+            },
+            components:{
+                start
+            }
+
+        })
+        app.mount('#app')
+
+    </script>
+</body>
+</html>

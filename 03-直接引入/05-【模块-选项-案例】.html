@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./start.js"></script>
+</head>
+<body>
+
+    <div id="app">
+
+        <start></start>
+        <hr>
+        <button @click="add">点击+1: {{c}}</button>
+        <div>{{year}}</div>
+        <div>奇偶性: {{jo}}</div>
+        <hr>
+        <end></end>
+
+    </div>
+
+    <script type="module">
+        import {createApp} from 'https://unpkg.com/vue@3.5.13/dist/vue.esm-browser.js'
+        import  end  from './end.js'
+        const app = createApp({
+            data(){
+                return {
+                    c:10,
+                    jo:'偶数'
+                }
+            },
+            methods:{
+                add(){
+                    this.c++
+                }
+            },
+            computed:{
+                year(){
+                    return new Date().getFullYear()
+                }
+            },
+            watch:{
+                c(x,y){
+                    this.jo = (x%2==0)?'偶数':'奇数'
+                }
+            },
+            components:{
+                start,end
+            }
+        })
+        app.mount('#app')
+
+    </script>
+</body>
+</html>

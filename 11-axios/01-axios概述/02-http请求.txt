@@ -1,0 +1,18 @@
+http 请求的分类
+- get     查询
+- post    增加
+- put     修改
+- delete  删除
+- head
+- trace
+- options
+- patch
+
+但是，get 和 post 功能过于强大，使得 增删改查 全支持
+往往，在编程中 
+
+get，查询
+    get 请求，是指 通过 浏览器 网址 发起的请求
+
+post，增加，修改，删除
+    post 请求，是指 通过 表单 发起的请求

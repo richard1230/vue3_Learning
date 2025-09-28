@@ -1,0 +1,11 @@
+{
+  "name": "02-js高级用法",
+  "version": "1.0.0",
+  "description": "",
+   "type": "module",
+  "main": "03-模块导入.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true
+}

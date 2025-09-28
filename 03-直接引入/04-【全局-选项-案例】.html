@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3.5.13/dist/vue.global.js"></script>
+    <script src="./start.js"></script>
+</head>
+<body>
+    <div id="app">
+        <start></start>
+        <hr>
+        {{aa}}
+        <button @click="add">点击+1</button>
+        <div>{{date}}</div>
+        <div>{{ oldv }} --&gt; {{ newv }}</div>
+    </div>
+
+    <script>
+        const { createApp } = Vue
+        const app = createApp({
+            data(){
+                return {
+                    aa:123,
+                    oldv:'',
+                    newv:''
+                }
+            },
+            methods:{
+                // 对于函数，可以写return，也可以不写return
+                add(){
+                    this.aa++
+                }
+            },
+            computed:{
+                // 与 函数很像，必须写return
+                // 效率比 methods 要高
+                date(){
+                    return new Date().toLocaleString()
+                }
+            },
+            watch:{
+                // 监听谁，就把谁当函数名
+                // x, 变化后的值
+                // y, 变化前的值
+                aa(x,y){
+                    this.oldv = y,
+                    this.newv = x
+                }
+            },
+            components:{
+                // 自定义标签
+                start
+            }
+        })
+        app.mount('#app')
+    </script>
+</body>
+</html>

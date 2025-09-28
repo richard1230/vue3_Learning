@@ -1,0 +1,138 @@
+安装方式1：
+    在已有项目中，添加路由（先安装vue，再安装 vue-router）
+    1 npm create [vite|vue]     (创建项目)
+      npm create vite
+
+    2 npm install
+    3 npm install vue-router
+    4 确保 package.json 中，dependencies 包含了 vue-router
+================================================================================
+mac@macdeMacBook-Pro vuedemo001 % pwd
+/Users/mac/github/vuelearn/vuedemo001
+
+mac@macdeMacBook-Pro vuedemo001 % npm create vite
+Need to install the following packages:
+create-vite@6.5.0
+Ok to proceed? (y)
+
+
+> npx
+> cva
+
+│
+◇  Project name:
+│  vite-project
+│
+◇  Select a framework:
+│  Vue
+│
+◇  Select a variant:
+│  JavaScript
+│
+◇  Scaffolding project in /Users/mac/github/vuelearn/vuedemo001/vite-project...
+│
+└  Done. Now run:
+
+  cd vite-project
+  npm install
+  npm run dev
+
+mac@macdeMacBook-Pro vuedemo001 % cd vite-project
+mac@macdeMacBook-Pro vite-project % npm install
+mac@macdeMacBook-Pro vite-project % npm install vue-router
+
+=============================================
+
+mac@macdeMacBook-Pro vuedemo001 % pwd
+/Users/mac/github/vuelearn/vuedemo001
+
+
+mac@macdeMacBook-Pro vuedemo001 % npm create vue
+Need to install the following packages:
+create-vue@3.17.0
+Ok to proceed? (y)
+
+
+> npx
+> create-vue
+
+┌  Vue.js - The Progressive JavaScript Framework
+│
+◇  请输入项目名称：
+│  vue-project
+│
+◇  请选择要包含的功能： (↑/↓ 切换，空格选择，a 全选，回车确认)
+│  none
+│
+◇  选择要包含的试验特性： (↑/↓ 切换，空格选择，a 全选，回车确认)
+│  none
+
+正在初始化项目 /Users/mac/github/vuelearn/vuedemo001/vue-project...
+│
+└  项目初始化完成，可执行以下命令：
+
+   cd vue-project
+   npm install
+   npm run dev
+
+| 可选：使用以下命令在项目目录中初始化 Git：
+
+   git init && git add -A && git commit -m "initial commit"
+
+
+
+mac@macdeMacBook-Pro vuedemo001 % cd vue-project
+mac@macdeMacBook-Pro vue-project % npm install
+mac@macdeMacBook-Pro vue-project % npm install vue-router
+
+
+
+================================================================================
+
+    
+安装方式2：
+    一起安装（ vue 和 vue-router 同时安装）
+    1 npm create vue
+    2 勾选 router 功能
+    3 确保 package.json 中，dependencies 包含了 vue-router
+    4 npm install
+
+
+
+=============================================
+
+mac@macdeMacBook-Pro vuelearn % pwd
+/Users/mac/github/vuelearn/
+
+
+mac@macdeMacBook-Pro vuelearn % npm create vue
+
+> npx
+> create-vue
+
+┌  Vue.js - The Progressive JavaScript Framework
+│
+◇  请输入项目名称：
+│  vue-project
+│
+◇  请选择要包含的功能： (↑/↓ 切换，空格选择，a 全选，回车确认)
+│  Router（单页面应用开发）
+│
+◇  选择要包含的试验特性： (↑/↓ 切换，空格选择，a 全选，回车确认)
+│  none
+
+正在初始化项目 /Users/mac/github/vuelearn/vue-project...
+│
+└  项目初始化完成，可执行以下命令：
+
+   cd vue-project
+   npm install
+   npm run dev
+
+| 可选：使用以下命令在项目目录中初始化 Git：
+
+   git init && git add -A && git commit -m "initial commit"
+
+mac@macdeMacBook-Pro vuelearn % cd vue-project
+mac@macdeMacBook-Pro vue-project % npm install
+

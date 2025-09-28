@@ -1,0 +1,21 @@
+<template>
+    <span @click="router.push('/phone/mi')">小米</span> | 
+    <span @click="router.push('/phone/hw')">华为</span> | 
+    <span @click="router.push('/phone/oppo')">oppo</span> | 
+    <span @click="router.push('/phone/vivo')">vivo</span>
+    <hr>
+    <router-view></router-view>
+</template>
+
+<script setup>
+
+
+import { useRouter } from "vue-router";
+const router = useRouter()
+
+
+</script>
+
+<style>
+
+</style>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 以全局引入为例 -->
+     <script src="https://unpkg.com/vue@3.5.13/dist/vue.global.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        <div>{{ msg }}</div>
+    </div>
+
+    <script>
+        // 1 引入函数
+        const { createApp ,ref , computed , watch} = Vue
+
+        // 2 创建应用
+        const app = createApp({
+            setup(){
+                // 变量、数据    相当于 选项式 中的 data
+                const msg = ref('hello Vue');
+                const msg2 = ref('你好');
+
+                // 函数、方法    相当于 选项式 中的 methods
+                function fun(){
+                }
+
+                // 计算属性      相当于 选项式 中的 computed
+                const comp = computed(()=>{
+                })
+
+                // 监听器       相当于 选项式 中的 watch
+                watch( msg  , (newv,oldv)=>{
+                }  )
+
+                return{
+                    msg,fun,comp
+                }
+            },
+            // 组件
+            components:{
+                // 与选项式一模一样
+            }
+        })
+
+        // 3 挂载应用
+        app.mount('#app')
+
+    </script>
+</body>
+</html>

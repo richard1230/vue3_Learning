@@ -1,0 +1,29 @@
+数据传输
+- 同步传输（同步通信、同步请求）
+    - 代码从上往下执行
+    - js 大部分函数都是同步的
+
+- 异步传输（异步通信、异步请求）
+    - 代码块同时执行
+    - js 计时器（setTimeout、setInterval）
+    - 异步多用来 传输 图片、视频、音乐
+    - 现如今，大部分网站，都是异步的
+
+异步请求的实现
+- ajax   (经典的技术、功能多)
+- fetch  (新技术，功能暂时较少)
+
+axios
+- 底层是 ajax
+- 就是一个 js 文件
+- https://unpkg.com/axios@1.9.0/dist/axios.min.js
+- 使用方式： 直接引入 或 npm 构建
+
+axios的安装
+- npm create vite
+- npm install
+- npm install axios
+- 确保 package.json 中 dependencies 中 包含了 axios
+
+axios 不需要 在 main.js 中 注入
+导入后直接用

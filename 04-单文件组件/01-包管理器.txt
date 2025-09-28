@@ -1,0 +1,31 @@
+js 的运行
+- 浏览器（03-直接引入）
+- nodejs（04-单文件组件）
+
+nodejs
+- 可以安装 包（即：nodejs的扩展功能）
+- 通过 包管理器 进行安装
+- 常见的包管理器：
+    - npm    官方自带，速度慢，包市场 在美国
+    - yarn   速度快，包市场 在美国
+    - pnpm   速度更快，功能更多，包市场 在美国
+    - cnpm   速度快，包市场 在中国
+
+cmd 进入指定文件夹
+- 方法1：  cd 文件夹路径
+- 方法2：  文件夹地址栏 输入 cmd
+- 方法3：  shift + 右键
+
+npm的使用
+- 包的安装
+    - npm install 包名
+    - 若不写包名，即：只输入npm install， 则寻找当前文件夹下 的 package.json
+            根据 package.json 的内容，自动批处理安装包
+    - npm install 包名 -g  全局安装
+
+- 包的网络问题
+    - 方式1：使用 cnpm
+    - 方式2：翻墙vpn
+    - 方式3：换源
+        npm install 包名 --registry https://registry.npmmirror.com
+    - 方式4：修改系统npm的源

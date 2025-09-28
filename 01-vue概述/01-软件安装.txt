@@ -1,0 +1,20 @@
+软件
+- vscode，编辑器
+- nodejs，解释器
+
+vscode插件
+- chinese       汉化
+- vscode-icons  美化图标
+- code runner   运行js
+- live preview  实时预览html
+- vue-official  vue扩展支持，语法着色，代码提示
+- AI插件
+    - tongyi lingma  阿里巴巴
+    - marscode AI    抖音
+    - codegeex       智谱
+
+shell
+- windows 的shell，有两个，cmd 和 powershell
+- cmd 经典的shell，权限很高
+- powershell 新的shell，功能很多，很安全，默认会禁止运行脚本
+- 提权：通过管理员运行 powershell ， 输入 set-executionpolicy remotesigned，Y

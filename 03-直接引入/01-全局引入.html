@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3.5.13/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+        <div id="d3"></div>
+
+
+    <script>
+        // 全局引入 vue
+        //     在 <head> 中，通过 <script src="vue.js"> 引入js
+
+        // 用法1： Vue.变量名   或 Vue.函数名()
+        document.getElementById('d1').innerHTML = Vue.version
+        document.getElementById('d3').innerHTML = Vue.vShow.name
+        console.log(Vue)
+
+        // 用法2：解构赋值
+        let {version,Suspense} = Vue
+        document.getElementById('d2').innerHTML = Suspense.name
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 以全局引入为例 -->
+    <script src="https://unpkg.com/vue@3.5.13/dist/vue.global.js"></script>
+</head>
+<body>
+
+    <div id="app">{{ msg }}</div>
+    <div id="app1">{{ x }}</div>
+
+    <script>
+        // 1 引入 createApp() 函数
+        const { createApp } = Vue
+
+        // 2 创建应用
+        const app = createApp({
+            // 变量、数据
+            data(){
+                return {
+                    msg:'hello vue',
+                    x:123
+                }
+            },
+            // 函数、方法
+            methods:{
+
+            },
+            // 计算属性
+            computed:{
+
+            },
+            // 监听器
+            watch:{
+
+            },
+            // 组件
+            components:{
+
+            }
+        })
+
+        // 3 挂载应用
+        app.mount('#app')
+
+    </script>
+    
+</body>
+</html>

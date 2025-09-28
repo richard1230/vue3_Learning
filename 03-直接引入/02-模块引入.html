@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1"></div>
+
+    <script type="module">
+        // 模块引入 vue
+        //    在 <body> 中 ，通过 <script type="module">
+        //    解构赋值，引入需要的变量
+
+        // 用法：解构赋值，直接用
+        import { version } from 'https://unpkg.com/vue@3.5.13/dist/vue.esm-browser.js'
+        document.getElementById('d1').innerHTML = version
+
+        // 解构赋值整理
+        //    数组解构      [ , ] = [ , ]
+        //    对象解构      let { 变量名 } = 对象名
+        //    文件解构      import { 变量名 } from '文件路径'
+
+    </script>    
+</body>
+</html>

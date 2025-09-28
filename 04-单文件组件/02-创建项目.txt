@@ -1,0 +1,46 @@
+创建项目
+- vue3项目，使用 nodejs 中的 vite
+- vue2项目，使用 nodejs 中的 vue-cli
+
+创建vue3项目，方式1
+    1 进入指定文件夹
+    2 【创建项目】
+        1 输入命令：             npm create vite
+        2 询问是否安装：          y
+        3 输入项目名称：          回车
+        4 选择框架（方向键）：    vue
+        5 选择语言（方向键）：    js  
+
+    3 【安装依赖】
+        1 用vscode 打开项目文件夹
+        2 开终端 ctrl + ~ 
+        3 确认 powershell 权限（若不想提权，进入 cmd）
+        4 输入 npm install
+
+    4 【运行项目】
+        1 输入命令  npm run dev
+        2 按住 ctrl 点击 网址
+        3 或者 使用 vscode插件（npm脚本）
+            1 vscode 目录导航处，右键勾出（npm脚本）
+            2 找到 dev 点击右侧 运行
+
+
+创建vue3项目，方式2
+    1 进入指定文件夹
+    2 【创建项目】
+        1 输入命令：             npm create vue
+        2 输入项目名称：         按下tab ，回车
+        3 选择要包含的功能：      回车
+
+     3 【安装依赖】
+        1 用vscode 打开项目文件夹
+        2 开终端 ctrl + ~ 
+        3 确认 powershell 权限（若不想提权，进入 cmd）
+        4 输入 npm install
+
+    4 【运行项目】
+        1 输入命令  npm run dev
+        2 按住 ctrl 点击 网址
+        3 或者 使用 vscode插件（npm脚本）
+            1 vscode 目录导航处，右键勾出（npm脚本）
+            2 找到 dev 点击右侧 运行       

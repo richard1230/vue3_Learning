@@ -1,0 +1,15 @@
+静态服务器
+- 不能与数据库交互
+- 支持的语言 .html
+- 常见的静态服务器：nginx、nodejs、apache
+
+动态服务器
+- 能与数据库交互
+- 支持的语言  .asp、.php、.jsp
+    - 静态网页  .html
+    - 动态网页  .asp、.php、.jsp
+- 常见的动态服务器：tomcat
+
+框架
+- 前端框架：jQuery、vue、react、angular
+- 后端框架：django、flask、spring boot
